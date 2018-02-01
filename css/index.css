@@ -148,6 +148,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 62.5%;
 }
 h1,
 h2,
@@ -159,8 +160,9 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  width: 100%;
   margin: auto;
+  max-width: 800px;
 }
 header {
   width: 100%;
@@ -239,9 +241,7 @@ header .logo {
 }
 @media (max-width: 400px) {
   .cta .top-img {
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    opacity: 0;
+    display: none;
   }
 }
 /* Main Content Styles */
@@ -251,7 +251,7 @@ header .logo {
   margin: 75px 0 35px 0;
   padding: 35px 0;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 2;
 }
 .main-content .top-content {
   display: flex;
@@ -266,11 +266,10 @@ header .logo {
   }
   .main-content .top-content .text-content {
     margin: 10px,0,10px,10px;
-    width: 45%;
   }
   .main-content .top-content .text-content h4 {
     text-align: center;
-    margin: 15px;
+    margin: 2px;
   }
 }
 .main-content .middle-img {
@@ -279,7 +278,7 @@ header .logo {
 }
 @media (max-width: 400px) {
   .main-content .middle-img {
-    width: 45%;
+    width: 100%;
     margin: 0px;
   }
 }
@@ -296,7 +295,6 @@ header .logo {
   }
   .main-content .bottom-content .text-content {
     margin: 10px,0,10px,10px;
-    width: 45%;
   }
   .main-content .bottom-content .text-content h4 {
     text-align: center;
@@ -308,20 +306,23 @@ header .logo {
 }
 /* Contact Styles */
 .contact p {
-  margin: 40px 0;
+  margin: 10% 0;
 }
 @media (max-width: 400px) {
   .contact {
-    margin: 40px;
+    margin: 10% 0;
+    font-size: 1.6rem;
+    padding: 10%;
   }
 }
 /* Footer Styles */
 footer {
   text-align: center;
-  margin: 40px 0 20px;
+  margin: 20%;
 }
 @media (max-width: 400px) {
   footer {
     width: 45%;
+    font-size: 1.5rem;
   }
 }
